@@ -7,11 +7,11 @@
 body {
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    font-size: 16px;
 }
 .wrapper
 {
     width: 100vw;
-    /*height: 100vw;*/
     background-color: #181c3d;
     color: rgb(252, 240, 255);
 }
@@ -38,7 +38,7 @@ body {
 .menu a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: .625rem 1.25rem;
 }
 .menu .activo{
     color:#00ffff;
@@ -66,19 +66,19 @@ h1 {
     padding: 10px 20px;
     background-color: #00ffff;
     border: none;
-    border-radius: 20px;
-    margin-top: 10px;
+    border-radius: 1.25rem;
+    margin-top: .625rem;
     cursor: pointer;
-    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+    box-shadow: .0625rem .1875rem .6875rem -0.3125rem rgba(102, 231, 200, .69);
 }
 .descargar-cv:hover{
     background-color: aliceblue;
     box-shadow: none;
 }
 .main img {
-    width: 480px;
+    width: 28em;
     
-    border: 5px solid #00ffff;
+    border: .3125rem solid #00ffff;
     z-index: 1;
 }
 .about {
@@ -100,10 +100,10 @@ h1 {
     color: #181c3d;
 }
 .divider {
-    height: 4px;
-    width: 60px;
+    height: .25rem;
+    width: 3.75rem;
     background-color: #00ffff;
-    margin-top: 5px;
+    margin-top: .3125rem;
     margin-bottom: 2em;
 }
 .portafolio {
@@ -127,29 +127,30 @@ h1 {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    background-size:cover;
     
 }
 .tarjeta {
-    width: 300px;
+    width: 18.75rem;
     margin: 2em;
     background-color:#00ffff;
     color: #181c3d;
 }
 .tarjeta_img{
     width: 100%;
-    height: 200px;
+    height: 12.5rem;
     background-image: url(../img/pBiblio1.png);
     background-size: cover;
 }
 .tarjeta_img1{
     width: 100%;
-    height: 200px;
+    height: 12.5rem;
     background-image: url(../img/curriculo.png);
     background-size: cover;
 }
 .tarjeta_img2{
     width: 100%;
-    height: 200px;
+    height: 12.5rem;
     background-image: url(../img/pCalendar2.png);
     background-size: cover;
 }
@@ -198,7 +199,7 @@ h1 {
 }
 .contenedor-contacto{
     padding: 3em;
-    margin-top: -20px;
+    margin-top: -1.25rem;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
@@ -206,7 +207,7 @@ h1 {
 }
 .contenedor-contacto img{
     opacity: 0.1;
-    bottom: 0px;
+    bottom: 0rem;
 }
 form{
     display: flex;
@@ -214,29 +215,30 @@ form{
     margin: 2em;
 }
 form input {
-    padding: 10px 20px;
+    padding: .625em 1.25em;
     margin-bottom: 1em;
     background: none;
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: .0625em solid #fff;
     color: aliceblue;
 }
 form textarea {
-    height: 150px;
+    height: 9.375em;
     background: none;
     color: aliceblue;
     padding: 1.5em;
-    border-bottom: 1px solid #fff;
+    border-bottom: .0625rem solid #fff;
 }
 .btn_enviar{
-    padding: 10px 20px;
+    padding: .625em 1.25em;
     margin: 1em;
     border: none;
     text-transform: uppercase;
     background-color: #00ffff;
-    border-radius: 20px;
+    border-radius: 1.25em;
     cursor: pointer;
-    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+    box-shadow: .0625rem .1875rem .6875rem -0.3125rem rgba(102, 231, 200, .69);
+    
 }
 .btn_enviar:hover{
     background-color: aliceblue;
@@ -248,7 +250,7 @@ form textarea {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 200px;
+    height: 12.5em;
     background-color: #00ffff;
     color: #181c3d;
 }
@@ -262,10 +264,93 @@ form textarea {
 .redes_sociales {
     display: flex;
     justify-content: space-evenly;
-    width: 300px;
+    width: 18.75em;
     margin-top: 1em;
 }
 
+.contenedorDescripcion{
+    background-color: #181c3d;
+   
+}
+.contenedorDescripcion h2{
+    color: aqua;
+    font-size: 1.75em;
+    
+}
+.contenedorDescripcion p{
+    padding: .1875em;
+    color: aqua;
+    font-size: 1.25em;
+    margin: .1875em;
+}
 
+.contenedorImg img{
+    width: 40%;
+    background-size: cover;
+    border: aqua solid .0625em;
+    margin: 2%;
+    align-items: center;
+}
 
+/*inicio media para celulares*/
+@media all and (max-width: 599px) {
+    header, section, footer {
+width: 90%;
+    }
 
+body{
+    font-size: 9px;
+}
+
+.main {
+    display: block;
+    
+}
+.contenedor-contacto img{
+    display: none;
+}
+.contenedor_proyecto{
+    grid-gap:auto;
+}
+.menu{
+width: 100%;
+align-content:center;
+
+}
+.menu a{
+padding:0;
+}
+.main img {
+margin:1em;
+margin-top:4em;
+}
+.portafolio .contenedor{
+display: block;
+}
+.info-content a{
+padding:1.5em;
+margin-top:1em;
+}
+.info-content p{
+margin:1em;
+}
+.brand{
+display:none;
+}
+.wrapper{
+height:60em;
+}
+.about {
+display:block;
+}
+.tarjeta{
+
+padding:0;
+margin:0;
+}
+.tarjeta_img{
+background-size:cover;
+
+}
+
+}
