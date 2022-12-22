@@ -228,20 +228,21 @@ form{
     flex-direction: column;
     margin: 2em;
 }
-form input {
+/*form input {
     padding: .625em 1.25em;
     margin-bottom: 1em;
     background: none;
     border: none;
     border-bottom: .0625em solid #fff;
     color: aliceblue;
-}
+}*/
 form textarea {
     height: 9.375em;
     background: none;
-    color: aliceblue;
+    color: rgb(38, 197, 20);
     padding: 1.5em;
     border-bottom: .0625rem solid #fff;
+    width: 50em;
 }
 .btn_enviar{
     padding: .625em 1.25em;
@@ -309,6 +310,19 @@ form textarea {
     align-items: center;
 }
 
+#whatsapp {
+    z-index: 9999;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+}
+#whatsapp img{
+    width: 75px;
+}
+
+
+
 /*inicio media para celulares*/
 @media all and (max-width: 599px) {
     header, section, footer {
@@ -373,4 +387,6 @@ background-size:cover;
     height: 100%;
    
 }
+
+
 }
