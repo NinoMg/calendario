@@ -323,7 +323,29 @@ form textarea {
 }
 
 
+/*inicio media para tablets*/
+@media all and (max-width: 799px) {
+    header, section, footer {
+width: 90%;
+    }
 
+body{
+    font-size: 9px;
+}
+.contenedor-contacto img{
+    display:none;
+}
+
+.formulario_contacto{
+    margin-left: 0;
+    margin-right: 0;
+    align-content: center;
+    
+}
+form textarea{
+    width: 100%;
+}
+}
 /*inicio media para celulares*/
 @media all and (max-width: 599px) {
     header, section, footer {
