@@ -228,14 +228,14 @@ form{
     flex-direction: column;
     margin: 2em;
 }
-/*form input {
+form input {
     padding: .625em 1.25em;
     margin-bottom: 1em;
     background: none;
     border: none;
     border-bottom: .0625em solid #fff;
     color: aliceblue;
-}*/
+}
 form textarea {
     height: 9.375em;
     background: none;
@@ -259,6 +259,7 @@ form textarea {
     background-color: aliceblue;
     box-shadow: none;
 }
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -339,6 +340,7 @@ body{
 }
 .contenedor-contacto img{
     display: none;
+    
 }
 .contenedor_proyecto{
     grid-gap:auto;
@@ -370,6 +372,7 @@ display:none;
 }
 .wrapper{
 height:60em;
+
 }
 .about {
 display:block;
@@ -387,6 +390,11 @@ background-size:cover;
     height: 100%;
    
 }
-
+form textarea{
+    width: 100%;
+}
+    info-content {
+        align-content:center;
+    }
 
 }
